@@ -203,13 +203,20 @@ graph TB
     API --> Hangfire
     API --> AppInsights
     
-    style Users fill:#e1f5fe
-    style AzureAD fill:#fff3e0
-    style Stripe fill:#f3e5f5
-    style FD fill:#e8f5e8
-    style API fill:#ffebee
-    style Redis fill:#fff8e1
-    style SQL fill:#e8f5e8
+    style Users fill:#1e3a8a
+    style AzureAD fill:#1e40af
+    style Stripe fill:#7c3aed
+    style FD fill:#059669
+    style API fill:#991b1b
+    style Redis fill:#d97706
+    style SQL fill:#047857
+    style Billing fill:#7c2d12
+    style TenantMgmt fill:#7c2d12
+    style FeatureFlags fill:#7c2d12
+    style EventGrid fill:#0891b2
+    style Hangfire fill:#0891b2
+    style AppInsights fill:#0891b2
+    style EmailService fill:#7c3aed
 ```
 
 #### Multi-Tenant Data Flow
@@ -301,25 +308,25 @@ graph TB
     Interfaces -.-> Messaging
     Interfaces -.-> External
     
-    style Controllers fill:#ffebee
-    style Middleware fill:#ffebee
-    style DTOs fill:#ffebee
-    style Commands fill:#e8f5e8
-    style Queries fill:#e8f5e8
-    style Handlers fill:#e8f5e8
-    style Services fill:#e8f5e8
-    style Interfaces fill:#e8f5e8
-    style Entities fill:#fff3e0
-    style ValueObjects fill:#fff3e0
-    style Aggregates fill:#fff3e0
-    style Repositories fill:#fff3e0
-    style DomainServices fill:#fff3e0
-    style Events fill:#fff3e0
-    style EF fill:#e3f2fd
-    style Repos fill:#e3f2fd
-    style Cache fill:#e3f2fd
-    style Messaging fill:#e3f2fd
-    style External fill:#e3f2fd
+    style Controllers fill:#991b1b
+    style Middleware fill:#991b1b
+    style DTOs fill:#991b1b
+    style Commands fill:#059669
+    style Queries fill:#059669
+    style Handlers fill:#059669
+    style Services fill:#059669
+    style Interfaces fill:#059669
+    style Entities fill:#d97706
+    style ValueObjects fill:#d97706
+    style Aggregates fill:#d97706
+    style Repositories fill:#d97706
+    style DomainServices fill:#d97706
+    style Events fill:#d97706
+    style EF fill:#0891b2
+    style Repos fill:#0891b2
+    style Cache fill:#0891b2
+    style Messaging fill:#0891b2
+    style External fill:#0891b2
 ```
 
 #### Multi-Tenant Implementation Details
@@ -353,15 +360,15 @@ graph LR
     TenantService --> CacheService
     TenantService --> BillingService
     
-    style Header fill:#e1f5fe
-    style Middleware fill:#e1f5fe
-    style Context fill:#e1f5fe
-    style IMustHaveTenant fill:#fff3e0
-    style GlobalFilter fill:#fff3e0
-    style TenantEntities fill:#fff3e0
-    style TenantService fill:#e8f5e8
-    style CacheService fill:#e8f5e8
-    style BillingService fill:#e8f5e8
+    style Header fill:#1e3a8a
+    style Middleware fill:#1e40af
+    style Context fill:#1e40af
+    style IMustHaveTenant fill:#d97706
+    style GlobalFilter fill:#d97706
+    style TenantEntities fill:#d97706
+    style TenantService fill:#059669
+    style CacheService fill:#059669
+    style BillingService fill:#059669
 ```
 
 #### CQRS Pattern Implementation
@@ -403,19 +410,19 @@ graph TB
     QueryHandler --> Cache
     ReadModel --> ReadDB
     
-    style Controller fill:#ffebee
-    style Command fill:#ffebee
-    style CommandHandler fill:#ffebee
-    style DomainEvents fill:#ffebee
-    style EventBus fill:#ffebee
-    style QueryController fill:#e8f5e8
-    style Query fill:#e8f5e8
-    style QueryHandler fill:#e8f5e8
-    style ReadModel fill:#e8f5e8
-    style Cache fill:#e8f5e8
-    style WriteDB fill:#e3f2fd
-    style ReadDB fill:#e3f2fd
-    style EventStore fill:#e3f2fd
+    style Controller fill:#991b1b
+    style Command fill:#991b1b
+    style CommandHandler fill:#991b1b
+    style DomainEvents fill:#991b1b
+    style EventBus fill:#991b1b
+    style QueryController fill:#059669
+    style Query fill:#059669
+    style QueryHandler fill:#059669
+    style ReadModel fill:#059669
+    style Cache fill:#059669
+    style WriteDB fill:#0891b2
+    style ReadDB fill:#0891b2
+    style EventStore fill:#0891b2
 ```
 
 ### 🚀 Deployment Architecture
@@ -481,22 +488,22 @@ graph TB
     Redis -.-> BackupRedis
     Storage -.-> BackupStorage
     
-    style Users fill:#e1f5fe
-    style FrontDoor fill:#e8f5e8
-    style AppGW fill:#fff3e0
-    style AppService fill:#ffebee
-    style FunctionApp fill:#ffebee
-    style SQL fill:#e3f2fd
-    style Redis fill:#e3f2fd
-    style Storage fill:#e3f2fd
-    style EventGrid fill:#e3f2fd
-    style ServiceBus fill:#e3f2fd
-    style KeyVault fill:#e3f2fd
-    style AppInsights fill:#e3f2fd
-    style LogAnalytics fill:#e3f2fd
-    style BackupSQL fill:#f5f5f5
-    style BackupRedis fill:#f5f5f5
-    style BackupStorage fill:#f5f5f5
+    style Users fill:#1e3a8a
+    style FrontDoor fill:#059669
+    style AppGW fill:#7c2d12
+    style AppService fill:#991b1b
+    style FunctionApp fill:#991b1b
+    style SQL fill:#047857
+    style Redis fill:#d97706
+    style Storage fill:#047857
+    style EventGrid fill:#0891b2
+    style ServiceBus fill:#0891b2
+    style KeyVault fill:#7c3aed
+    style AppInsights fill:#0891b2
+    style LogAnalytics fill:#0891b2
+    style BackupSQL fill:#6b7280
+    style BackupRedis fill:#6b7280
+    style BackupStorage fill:#6b7280
 ```
 
 #### Container Deployment Strategy
@@ -549,38 +556,38 @@ graph TB
     ProdApp --> ProdRedis
     ProdApp --> FrontDoor
     
-    style DevCode fill:#e1f5fe
-    style DockerDev fill:#e1f5fe
-    style LocalDB fill:#e1f5fe
-    style LocalRedis fill:#e1f5fe
-    style GitHub fill:#fff3e0
-    style ACR fill:#fff3e0
-    style Bicep fill:#fff3e0
-    style StagingACR fill:#e8f5e8
-    style StagingApp fill:#e8f5e8
-    style StagingSQL fill:#e8f5e8
-    style StagingRedis fill:#e8f5e8
-    style ProdACR fill:#ffebee
-    style ProdApp fill:#ffebee
-    style ProdSQL fill:#ffebee
-    style ProdRedis fill:#ffebee
-    style FrontDoor fill:#ffebee
+    style DevCode fill:#1e3a8a
+    style DockerDev fill:#1e40af
+    style LocalDB fill:#047857
+    style LocalRedis fill:#d97706
+    style GitHub fill:#7c2d12
+    style ACR fill:#7c2d12
+    style Bicep fill:#7c2d12
+    style StagingACR fill:#059669
+    style StagingApp fill:#059669
+    style StagingSQL fill:#047857
+    style StagingRedis fill:#d97706
+    style ProdACR fill:#991b1b
+    style ProdApp fill:#991b1b
+    style ProdSQL fill:#047857
+    style ProdRedis fill:#d97706
+    style FrontDoor fill:#059669
 ```
 
 #### Network Security Architecture
 
 ```mermaid
 graph TB
-    subgraph "Internet"
-        Internet[Public Internet]
-        Malicious[Malicious Traffic]
+    subgraph "External Access"
+        PublicInternet[Public Internet]
+        MaliciousTraffic[Malicious Traffic]
     end
     
-    subgraph "Edge Security"
+    subgraph "Edge Security Layer"
         FrontDoor[Azure Front Door<br/>WAF + DDoS Protection]
     end
     
-    subgraph "Virtual Network"
+    subgraph "Azure Virtual Network"
         subgraph "Application Subnet"
             AppGW[Application Gateway]
             AppService[App Service]
@@ -600,13 +607,13 @@ graph TB
         end
     end
     
-    subgraph "Identity"
+    subgraph "Identity & Access Management"
         AzureAD[Azure AD B2C]
-        MSI[Managed Identity]
+        ManagedIdentity[Managed Identity]
     end
     
-    Internet --> FrontDoor
-    Malicious -.-> FrontDoor
+    PublicInternet --> FrontDoor
+    MaliciousTraffic -.-> FrontDoor
     FrontDoor --> AppGW
     AppGW --> AppService
     AppGW --> FunctionApp
@@ -620,23 +627,23 @@ graph TB
     
     AppService --> AzureAD
     FunctionApp --> AzureAD
-    AppService --> MSI
-    FunctionApp --> MSI
+    AppService --> ManagedIdentity
+    FunctionApp --> ManagedIdentity
     
-    style Internet fill:#e1f5fe
-    style Malicious fill:#ffebee
-    style FrontDoor fill:#e8f5e8
-    style AppGW fill:#fff3e0
-    style AppService fill:#fff3e0
-    style FunctionApp fill:#fff3e0
-    style SQL fill:#e3f2fd
-    style Redis fill:#e3f2fd
-    style Storage fill:#e3f2fd
-    style EventGrid fill:#e3f2fd
-    style ServiceBus fill:#e3f2fd
-    style KeyVault fill:#e3f2fd
-    style AzureAD fill:#f3e5f5
-    style MSI fill:#f3e5f5
+    style PublicInternet fill:#1e3a8a
+    style MaliciousTraffic fill:#991b1b
+    style FrontDoor fill:#059669
+    style AppGW fill:#7c2d12
+    style AppService fill:#7c2d12
+    style FunctionApp fill:#7c2d12
+    style SQL fill:#047857
+    style Redis fill:#d97706
+    style Storage fill:#047857
+    style EventGrid fill:#0891b2
+    style ServiceBus fill:#0891b2
+    style KeyVault fill:#7c3aed
+    style AzureAD fill:#1e40af
+    style ManagedIdentity fill:#1e40af
 ```
 
 ---
@@ -751,14 +758,14 @@ graph TB
     MultiTenant --> Unit
     MultiTenant --> Integration
     
-    style Unit fill:#e8f5e8
-    style Integration fill:#fff3e0
-    style E2E fill:#ffebee
-    style BDD fill:#e3f2fd
-    style Functional fill:#f3e5f5
-    style Performance fill:#f3e5f5
-    style Security fill:#f3e5f5
-    style MultiTenant fill:#f3e5f5
+    style Unit fill:#059669
+    style Integration fill:#d97706
+    style E2E fill:#991b1b
+    style BDD fill:#0891b2
+    style Functional fill:#7c3aed
+    style Performance fill:#7c3aed
+    style Security fill:#7c3aed
+    style MultiTenant fill:#7c3aed
 ```
 
 ### Running Tests
@@ -836,18 +843,18 @@ graph TB
     HealthAPI --> HealthDB
     HealthAPI --> HealthCache
     
-    style API fill:#ffebee
-    style Background fill:#ffebee
-    style Functions fill:#ffebee
-    style AppInsights fill:#e3f2fd
-    style CustomLogs fill:#e3f2fd
-    style Metrics fill:#e3f2fd
-    style Dashboards fill:#e8f5e8
-    style Alerts fill:#e8f5e8
-    style Logs fill:#e8f5e8
-    style HealthAPI fill:#fff3e0
-    style HealthDB fill:#fff3e0
-    style HealthCache fill:#fff3e0
+    style API fill:#991b1b
+    style Background fill:#991b1b
+    style Functions fill:#991b1b
+    style AppInsights fill:#0891b2
+    style CustomLogs fill:#0891b2
+    style Metrics fill:#0891b2
+    style Dashboards fill:#059669
+    style Alerts fill:#059669
+    style Logs fill:#059669
+    style HealthAPI fill:#d97706
+    style HealthDB fill:#d97706
+    style HealthCache fill:#d97706
 ```
 
 ### Key Metrics
@@ -909,22 +916,22 @@ graph TB
     RateLimiting --> AuditLogging
     AuditLogging --> SecurityHeaders
     
-    style AzureAD fill:#f3e5f5
-    style JWT fill:#f3e5f5
-    style RBAC fill:#f3e5f5
-    style Policies fill:#f3e5f5
-    style Encryption fill:#e3f2fd
-    style TLS fill:#e3f2fd
-    style KeyVault fill:#e3f2fd
-    style Secrets fill:#e3f2fd
-    style WAF fill:#e8f5e8
-    style DDoS fill:#e8f5e8
-    style PrivateLink fill:#e8f5e8
-    style NetworkRules fill:#e8f5e8
-    style InputValidation fill:#fff3e0
-    style RateLimiting fill:#fff3e0
-    style AuditLogging fill:#fff3e0
-    style SecurityHeaders fill:#fff3e0
+    style AzureAD fill:#1e40af
+    style JWT fill:#1e40af
+    style RBAC fill:#1e40af
+    style Policies fill:#1e40af
+    style Encryption fill:#0891b2
+    style TLS fill:#0891b2
+    style KeyVault fill:#7c3aed
+    style Secrets fill:#7c3aed
+    style WAF fill:#059669
+    style DDoS fill:#059669
+    style PrivateLink fill:#059669
+    style NetworkRules fill:#059669
+    style InputValidation fill:#d97706
+    style RateLimiting fill:#d97706
+    style AuditLogging fill:#d97706
+    style SecurityHeaders fill:#d97706
 ```
 
 ### Security Best Practices
