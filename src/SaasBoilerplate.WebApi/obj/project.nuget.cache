@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+d5hXSXO7Ms=",
+  "dgSpecHash": "HcHd/PJ14sA=",
   "success": true,
   "projectFilePath": "/mnt/d/Workspace/ThingXCloud/dotnet-multi-tenant-saas-boilerplate-with-advanced-features/src/SaasBoilerplate.WebApi/SaasBoilerplate.WebApi.csproj",
   "expectedPackageFiles": [
@@ -30,7 +30,6 @@
     "/home/nithinmohan/.nuget/packages/microsoft.applicationinsights.windowsserver.telemetrychannel/2.23.0/microsoft.applicationinsights.windowsserver.telemetrychannel.2.23.0.nupkg.sha512",
     "/home/nithinmohan/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/10.0.1/microsoft.aspnetcore.authentication.jwtbearer.10.0.1.nupkg.sha512",
     "/home/nithinmohan/.nuget/packages/microsoft.aspnetcore.authentication.openidconnect/10.0.0/microsoft.aspnetcore.authentication.openidconnect.10.0.0.nupkg.sha512",
-    "/home/nithinmohan/.nuget/packages/microsoft.aspnetcore.diagnostics.healthchecks/2.2.0/microsoft.aspnetcore.diagnostics.healthchecks.2.2.0.nupkg.sha512",
     "/home/nithinmohan/.nuget/packages/microsoft.aspnetcore.openapi/10.0.0/microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
     "/home/nithinmohan/.nuget/packages/microsoft.bcl.asyncinterfaces/8.0.0/microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
     "/home/nithinmohan/.nuget/packages/microsoft.bcl.cryptography/9.0.4/microsoft.bcl.cryptography.9.0.4.nupkg.sha512",
@@ -108,18 +107,5 @@
     "/home/nithinmohan/.nuget/packages/system.security.permissions/9.0.0/system.security.permissions.9.0.0.nupkg.sha512",
     "/home/nithinmohan/.nuget/packages/system.windows.extensions/9.0.0/system.windows.extensions.9.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1510",
-      "level": "Warning",
-      "message": "PackageReference Microsoft.AspNetCore.Diagnostics.HealthChecks will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "/mnt/d/Workspace/ThingXCloud/dotnet-multi-tenant-saas-boilerplate-with-advanced-features/src/SaasBoilerplate.WebApi/SaasBoilerplate.WebApi.csproj",
-      "warningLevel": 1,
-      "filePath": "/mnt/d/Workspace/ThingXCloud/dotnet-multi-tenant-saas-boilerplate-with-advanced-features/src/SaasBoilerplate.WebApi/SaasBoilerplate.WebApi.csproj",
-      "libraryId": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }

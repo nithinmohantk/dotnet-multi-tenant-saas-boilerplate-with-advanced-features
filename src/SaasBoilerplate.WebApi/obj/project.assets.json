@@ -488,19 +488,6 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.AspNetCore.Diagnostics.HealthChecks/2.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.AspNetCore.OpenApi/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -2949,19 +2936,6 @@
         "lib/net10.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.xml",
         "microsoft.aspnetcore.authentication.openidconnect.10.0.0.nupkg.sha512",
         "microsoft.aspnetcore.authentication.openidconnect.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Diagnostics.HealthChecks/2.2.0": {
-      "sha512": "RNmdLy9yncTprony49cuwhyTKoROpVflGM+pKlHA1671F00QUsjoY1Oi6xoa9XsUrfRDRYlxbt2CHYCMLzMh7Q==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.diagnostics.healthchecks/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.HealthChecks.xml",
-        "microsoft.aspnetcore.diagnostics.healthchecks.2.2.0.nupkg.sha512",
-        "microsoft.aspnetcore.diagnostics.healthchecks.nuspec"
       ]
     },
     "Microsoft.AspNetCore.OpenApi/10.0.0": {
@@ -5983,7 +5957,6 @@
       "Hangfire.AspNetCore >= 1.8.22",
       "Microsoft.ApplicationInsights.AspNetCore >= 2.23.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.1",
-      "Microsoft.AspNetCore.Diagnostics.HealthChecks >= 2.2.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.1",
       "Microsoft.FeatureManagement.AspNetCore >= 4.3.0",
@@ -6063,10 +6036,6 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[10.0.1, )"
-          },
-          "Microsoft.AspNetCore.Diagnostics.HealthChecks": {
-            "target": "Package",
-            "version": "[2.2.0, )"
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
@@ -6527,17 +6496,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1510",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "PackageReference Microsoft.AspNetCore.Diagnostics.HealthChecks will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "libraryId": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  }
 }

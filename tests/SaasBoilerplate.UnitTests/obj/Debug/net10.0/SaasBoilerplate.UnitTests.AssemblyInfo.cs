@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SaasBoilerplate.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb996295b2e702a49dedc14fb73a9a947a3c2538")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d0169d8ecac7c064dedc3c0591a1322568e2adc")]
 [assembly: System.Reflection.AssemblyProductAttribute("SaasBoilerplate.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SaasBoilerplate.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
