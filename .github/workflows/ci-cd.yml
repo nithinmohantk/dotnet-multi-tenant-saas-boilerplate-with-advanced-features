@@ -21,13 +21,13 @@ jobs:
         dotnet-version: 10.0.x
         
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore SaasBoilerplate.sln
       
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build SaasBoilerplate.sln --no-restore
       
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test SaasBoilerplate.sln --no-build --verbosity normal
       
     - name: Publish
       run: dotnet publish src/SaasBoilerplate.WebApi/SaasBoilerplate.WebApi.csproj -c Release -o release
