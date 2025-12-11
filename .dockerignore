@@ -1,0 +1,463 @@
+# .NET Dockerignore
+
+# .NET Core build artifacts
+**/obj/
+**/bin/
+**/*.dll
+**/*.exe
+**/*.pdb
+**/*.cache
+**/*.log
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][M64]/
+[Aa][Rr][M]/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Azure
+.azure/
+
+# Configuration files with sensitive data
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+!appsettings.json
+!appsettings.example.json
+
+# Secrets and certificates
+*.pfx
+*.p12
+*.key
+*.pem
+*.crt
+*.cer
+secrets/
+
+# Connection strings
+connectionstrings.json
+connectionstrings.*.json
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+!.env.example
+
+# Database files
+*.mdf
+*.ldf
+*.ndf
+*.sdf
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# Log files
+logs/
+*.log
+
+# Documentation
+*.md
+!README.md
+!CONTRIBUTING.md
+!CHANGELOG.md
+!LICENSE
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# GitHub
+.github/
+
+# CI/CD
+azure-pipelines.yml
+.github/workflows/
+Jenkinsfile
+.gitlab-ci.yml
+bitbucket-pipelines.yml
+.travis.yml
+appveyor.yml
+
+# Docker files
+Dockerfile*
+docker-compose*.yml
+docker-compose*.yaml
+!docker-compose.yml
+
+# Development tools
+.editorconfig
+.stylecopjson
+sonar-project.properties
+.nuget/
+NuGet.config
+packages.config
+
+# Test artifacts
+TestResults/
+test-results/
+coverage/
+coverage.xml
+coverage.json
+*.coverage
+*.coveragexml
+
+# Performance profiling
+*.perf
+*.diagsession
+*.trace
+
+# ReSharper
+*.ReSharper.user
+*.ReSharper.user.*
+
+# StyleCop
+*.StyleCop.Cache
+
+# Node.js (if used for frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# TypeScript
+*.tsbuildinfo
+
+# Angular
+.angular/
+dist/
+
+# React
+build/
+
+# Vue
+dist/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Editor backup files
+*~
+*.swp
+*.swo
+
+# Lock files (keep package.json but ignore lock files for smaller context)
+package-lock.json
+yarn.lock
+
+# Local development
+.local/
+local/
+
+# Generated files
+Generated/
+generated/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Executables and libraries that shouldn't be in the container
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Large files that shouldn't be in the container
+*.iso
+*.dmg
+*.img
+
+# Media files
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mp3
+*.wav
+*.flac
+*.aac
+
+# Image files (unless needed for the application)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.ico
+
+# Font files
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.eot
+
+# Office documents
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Application Insights
+ApplicationInsights.config
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Bicep
+*.bicepparam
+
+# Kubernetes
+*.kubeconfig
+
+# Helm
+charts/*.tgz
+
+# Monitoring and logging
+*.log
+*.trace
+*.perf
+
+# Security and certificates
+*.p12
+*.pfx
+*.key
+*.pem
+*.crt
+*.cer
+
+# Configuration with secrets
+appsettings.*.json
+!appsettings.json
+!appsettings.example.json
+
+# Environment files
+.env.*
+!.env.example
+
+# Local development databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache directories
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+
+# Build outputs
+dist/
+build/
+out/
+target/
+
+# Test outputs
+coverage/
+.nyc_output/
+test-results/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Package manager cache
+.npm/
+.yarn/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/*
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Keep important files for Docker build
+!Dockerfile
+!docker-compose.yml
+!.dockerignore
+!src/
+!*.csproj
+!*.sln
+!global.json
+!NuGet.config
+!Directory.Build.props
+!Directory.Build.targets
+!Properties/
+!wwwroot/
+!appsettings.json
+!appsettings.example.json
+!README.md
+!LICENSE
