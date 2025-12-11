@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SaasBoilerplate.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+850e56cac8a6b9c4267a27fb7ea81eacf0e15c47")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb996295b2e702a49dedc14fb73a9a947a3c2538")]
 [assembly: System.Reflection.AssemblyProductAttribute("SaasBoilerplate.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SaasBoilerplate.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
