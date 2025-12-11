@@ -58,4 +58,6 @@ jobs:
         context: .
         file: src/SaasBoilerplate.WebApi/Dockerfile
         push: true
-        tags: user/saas-boilerplate:latest
+        tags: |
+          thingxcloud/saas-boilerplate:latest
+          thingxcloud/saas-boilerplate:${{ github.sha }}
