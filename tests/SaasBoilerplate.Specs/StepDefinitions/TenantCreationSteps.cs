@@ -17,7 +17,7 @@ namespace SaasBoilerplate.Specs.StepDefinitions
     [Binding]
     public class TenantCreationSteps
     {
-        private CreateTenantCommand _command;
+        private CreateTenantCommand _command = null!;
         private Guid _result;
         private Mock<IApplicationDbContext> _mockContext;
         private Mock<DbSet<Tenant>> _mockSet;

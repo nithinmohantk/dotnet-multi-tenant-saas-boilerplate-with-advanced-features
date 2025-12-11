@@ -813,3 +813,4 @@ Procfile
 # Huawei Cloud
 .huawei/
 !.huawei/config
+!global.json
