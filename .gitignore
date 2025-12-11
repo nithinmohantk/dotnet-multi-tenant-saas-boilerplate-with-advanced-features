@@ -814,3 +814,6 @@ Procfile
 .huawei/
 !.huawei/config
 !global.json
+!.github/rulesets/*.json
+!.github/CODEOWNERS
+!.github/dependabot.yml
