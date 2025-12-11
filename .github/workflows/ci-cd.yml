@@ -58,12 +58,21 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         
+    - name: Extract Docker metadata
+      id: meta
+      uses: docker/metadata-action@v5
+      with:
+        images: thingxcloud/saas-boilerplate
+        tags: |
+          type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
+          type=ref,event=branch
+          type=sha
+
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
       with:
         context: release
         file: release/Dockerfile
         push: true
-        tags: |
-          thingxcloud/saas-boilerplate:latest
-          thingxcloud/saas-boilerplate:${{ github.sha }}
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
